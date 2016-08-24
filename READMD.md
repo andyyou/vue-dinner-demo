@@ -104,3 +104,18 @@ $ npm i vue -S
 # 更新 main.js 與 app.js
 $ npm run dev
 ```
+
+# Commit #9
+
+使用 `vue-loader`
+
+1. 補上 `webpack.config.js`
+2. 更新 `main.js` 與 `app.vue`
+
+```
+$ npm i vue-loader vue-html-loader vue-style-loader vue-hot-reload-api@1 -D
+# 記得 app.js -> app.vue 和 main.js 載入路徑
+
+$ webpack-dev-server
+$ webpack-dev-server --inline --hot
+```
