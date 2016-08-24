@@ -35,7 +35,7 @@ $ python -m SimpleHTTPServer
 
 # Commit #3 Loaders
 
-重點在於 `loaders` 使用 `!` 
+重點在於 `loaders` 使用 `!`
 
 ```
 $ npm i css-loader style-loader file-loader -D
@@ -47,4 +47,13 @@ $ webpack src/main.js bundle.js
 $ python -m SimpleHTTPServer
 
 # CTRL + D 停止 Server
+```
+
+# Commit #4
+
+* 修改 `!` 語法，使用指令搭配參數
+* 將輸出整理到 `dist/`
+
+```
+$ webpack src/main.js dist/bundle.js --module-bind 'css=style!css' --module-bind 'png=file' --output-public-path='/dist/'
 ```
