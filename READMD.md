@@ -67,3 +67,16 @@ $ rm -rf dist
 $ webpack
 $ python -m SimpleHTTPServer
 ```
+
+# Commit #6
+
+* 使用 `webpack-dev-server` 協助開發
+* 加入 `npm scripts`
+
+```
+$ npm i webpack-dev-server -D
+$ webpack-dev-server
+
+$ npm run build
+$ npm run dev
+```
