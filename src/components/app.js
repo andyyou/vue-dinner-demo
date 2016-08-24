@@ -1,3 +1,5 @@
 module.exports = function () {
-  return 'Hey! I am a module'
+  var img = new Image()
+  img.src = require('file!../images/logo.png')
+  return img
 }

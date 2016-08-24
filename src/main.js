@@ -1,2 +1,4 @@
+require('style!css!./styles/base.css')
+
 var app = require('./components/app.js')
-document.write(app())
+document.body.appendChild(app())

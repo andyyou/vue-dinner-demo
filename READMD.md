@@ -32,3 +32,19 @@ $ webpack ./src/main.js bundle.js
 $ python -m SimpleHTTPServer
 # 瀏覽器開啟 http://localhost:8000/
 ```
+
+# Commit #3 Loaders
+
+重點在於 `loaders` 使用 `!` 
+
+```
+$ npm i css-loader style-loader file-loader -D
+# 1. 準備幾張圖片置放於 images 目錄
+# 2. 撰寫簡單的測試 css (styles/base.css)
+# 3. 撰寫元件 (components/app.js)
+# 4. 更新 main.js
+$ webpack src/main.js bundle.js
+$ python -m SimpleHTTPServer
+
+# CTRL + D 停止 Server
+```
