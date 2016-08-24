@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <img :src="logo">
-    {{msg}}!
+    {{msg}}
   </div>
 </template>
 

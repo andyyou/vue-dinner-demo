@@ -2,11 +2,15 @@ var path = require('path')
 var webpack = require('webpack')
 
 var config = {
-  entry: './src/main.js',
+  entry: [
+    'webpack/hot/dev-server',
+    'webpack-hot-middleware/client',
+    './src/main.js'
+  ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: 'dist/'
+    publicPath: '/dist/'
   },
   module: {
     loaders: [

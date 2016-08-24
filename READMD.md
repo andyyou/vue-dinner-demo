@@ -148,3 +148,25 @@ plugins: [
 ```
 $ webpack-dev-server --inline --hot
 ```
+
+# Commit #11 客製化開發伺服器
+
+使用 `express` 搭配 `webpack-dev-middleware` 與 `webpack-hot-middleware` 建置開發伺服器
+
+```
+$ npm i express webpack-dev-middleware webpack-hot-middleware -D
+# 新增 build/server.js
+$ node build/server.js
+```
+
+記得在 `entry` 加上兩隻 scripts
+
+```
+entry: [
+  'webpack/hot/dev-server',
+  'webpack-hot-middleware/client',
+  './src/main.js'
+]
+```
+
+> [教學 express + webpack-dev-middleware](http://madole.github.io/blog/2015/08/26/setting-up-webpack-dev-middleware-in-your-express-application/)
