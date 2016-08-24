@@ -57,3 +57,13 @@ $ python -m SimpleHTTPServer
 ```
 $ webpack src/main.js dist/bundle.js --module-bind 'css=style!css' --module-bind 'png=file' --output-public-path='/dist/'
 ```
+
+# Commit #5
+
+1.加入 `webpack.config.js` 設定檔
+
+```
+$ rm -rf dist
+$ webpack
+$ python -m SimpleHTTPServer
+```
