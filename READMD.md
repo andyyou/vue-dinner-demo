@@ -119,3 +119,32 @@ $ npm i vue-loader vue-html-loader vue-style-loader vue-hot-reload-api@1 -D
 $ webpack-dev-server
 $ webpack-dev-server --inline --hot
 ```
+
+# Commit #10
+
+於 `webpack.config.js` 加上 `devServer` 設定
+
+```
+$ webpack-dev-server
+```
+
+旨於說明我們可以使用
+
+```
+devServer: {
+  historyApiFallback: true,
+  hot: true,
+  inline: true,
+  progress: true,
+  stats: 'errors-only'
+},
+plugins: [
+  new webpack.HotModuleReplacementPlugin()
+]
+```
+
+或者
+
+```
+$ webpack-dev-server --inline --hot
+```

@@ -1,4 +1,5 @@
 var path = require('path')
+var webpack = require('webpack')
 
 var config = {
   entry: './src/main.js',
@@ -27,7 +28,17 @@ var config = {
         loader: 'vue'
       }
     ]
-  }
+  },
+  devServer: {
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    progress: true,
+    stats: 'errors-only'
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
 
 module.exports = config
