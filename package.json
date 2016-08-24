@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --colors --progress",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "dashboard": "node build/server.js"
   },
   "keywords": [],
   "author": "andyyou <andyyu0920@gmail.com> (http://andyyou.github.io)",
@@ -26,6 +27,7 @@
     "vue-loader": "^8.5.2",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.2",
+    "webpack-dashboard": "^0.1.7",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-dev-server": "^1.15.0",
     "webpack-hot-middleware": "^2.12.2"
