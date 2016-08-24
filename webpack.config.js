@@ -16,6 +16,11 @@ var config = {
       {
         test: /\.(png|jpg|svg)$/,
         loader: 'file'
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        exclude: /node_modules/
       }
     ]
   }

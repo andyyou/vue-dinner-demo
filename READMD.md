@@ -80,3 +80,17 @@ $ webpack-dev-server
 $ npm run build
 $ npm run dev
 ```
+
+# Commit #7
+
+導入 `babel`
+
+1. 安裝 babel 所需的套件
+2. 更新 `webapck.config.js`
+3. 加入 `.babelrc`
+
+```
+$ npm i babel-core babel-loader babel-plugin-transform-runtime babel-preset-es2015 babel-runtime -D
+# 更新 config 與使用 ES2015 語法
+$ npm run dev
+```
