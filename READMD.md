@@ -94,3 +94,13 @@ $ npm i babel-core babel-loader babel-plugin-transform-runtime babel-preset-es20
 # 更新 config 與使用 ES2015 語法
 $ npm run dev
 ```
+
+# Commit #8
+
+安裝與使用 `vue.js`
+
+```
+$ npm i vue -S
+# 更新 main.js 與 app.js
+$ npm run dev
+```

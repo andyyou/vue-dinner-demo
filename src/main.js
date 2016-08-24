@@ -1,4 +1,10 @@
+import Vue from 'vue'
 import styles from './styles/base.css'
-import app from './components/app.js'
+import App from './components/app.js'
 
-document.body.appendChild(app())
+new Vue({
+  el: 'body',
+  components: {
+    App
+  }
+})
